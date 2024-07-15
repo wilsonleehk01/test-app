@@ -1,0 +1,30 @@
+name: Pull Request Check
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [ "opened", "synchronize" ]
+    branches:
+      - 'development'
+      - 'release/**'
+      - 'master'
+jobs:
+  main:
+    runs-on: ["default-runner"]
+    environment: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release/') && 'staging' || 'development' }}
+    steps:
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Build image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: false
+          tags: test
+          target: installer
+          load: true
+
+      - name: Run test
+        uses: ./.github/actions/run-test

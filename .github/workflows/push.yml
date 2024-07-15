@@ -1,0 +1,53 @@
+name: Deploy
+on:
+    workflow_dispatch:
+    push:
+      branches:
+        - 'development'
+        - 'release/**'
+        - 'master'
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+    main:
+      runs-on: ["default-runner"]
+      environment: ${{ github.ref_name == 'master' && 'production' || contains(github.ref_name,'release/') && 'staging' || 'development' }}
+      steps:
+        - name: Setup node
+          uses: actions/setup-node@v3
+          with:
+            node-version-file: '.nvmrc'
+
+        - name: Build image
+          uses: docker/build-push-action@v4
+          with:
+            context: .
+            push: false
+            tags: test
+            target: installer
+            load: true
+
+        - name: Run test
+          uses: ./.github/actions/run-test
+
+        - name: Configure git user and email
+          run: |
+            git config user.email "builds@github.com"
+            git config user.name "Github Actions"
+
+        - name: configure image tag
+          run: |
+            echo "tag=v$((${{ github.run_number }} + 100000))-build" >> $GITHUB_ENV
+            echo "TIMESTAMP=$(date)" >> $GITHUB_ENV
+            sleep 5;
+
+        # TODO use release-please
+        # - name: Bump version
+        #   uses: ./.github/actions/bump-version
+        #   with:
+        #     environment: ${{ vars.ENV }}
+
+        # - name: Create merge back
+        #   uses: ./.github/actions/create-merge-back
+        #   with:
+        #     environment: ${{ vars.ENV }}

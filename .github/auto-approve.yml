@@ -1,0 +1,5 @@
+# https://github.com/hk01-digital/github-bot-auto-approve#usage
+enable: true
+login:
+  - dependabot[bot]
+  - wilsonleehk01
