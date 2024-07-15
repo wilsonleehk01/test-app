@@ -1,0 +1,18 @@
+name: Create merge back PR
+description: 'Create merge back PR'
+inputs:
+  environment:
+    required: true
+    description: Environment
+runs:
+  using: 'composite'
+  steps:
+    - shell: bash
+      name: Create merge back PR
+      if: inputs.environment == 'production'
+      run: |
+        git checkout -qf master
+        git pull origin master
+        git fetch origin development
+        gh pr create -B development -t "Merge master to development" -b "ok-to-merge-back" || echo "Failed to create merge back PR!"
+        gh pr merge --auto --merge

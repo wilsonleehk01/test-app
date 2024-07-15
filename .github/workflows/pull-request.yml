@@ -7,6 +7,8 @@ on:
       - 'development'
       - 'release/**'
       - 'master'
+env:
+  APP_ENV: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release/') && 'staging' || 'development' }}
 jobs:
   main:
     runs-on: ["ubuntu-latest"]

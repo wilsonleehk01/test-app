@@ -8,6 +8,7 @@ on:
         - 'master'
 env:
   GH_TOKEN: ${{ github.token }}
+  APP_ENV: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release/') && 'staging' || 'development' }}
 jobs:
     main:
       runs-on: ["ubuntu-latest"]
@@ -48,9 +49,9 @@ jobs:
         # - name: Bump version
         #   uses: ./.github/actions/bump-version
         #   with:
-        #     environment: ${{ vars.ENV }}
+        #     environment: ${{ env.APP_ENV }}
 
         # - name: Create merge back
         #   uses: ./.github/actions/create-merge-back
         #   with:
-        #     environment: ${{ vars.ENV }}
+        #     environment: ${{ env.APP_ENV }}
