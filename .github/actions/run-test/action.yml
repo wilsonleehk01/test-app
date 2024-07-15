@@ -12,7 +12,6 @@ runs:
       run: |
         docker run --rm \
           --entrypoint "" \
-          --network=shared \
           test bash -c "
           yarn install --frozen-lockfile &&
           yarn lint --quiet &&
