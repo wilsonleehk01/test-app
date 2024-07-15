@@ -10,7 +10,7 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
     main:
-      runs-on: ["default-runner"]
+      runs-on: ["ubuntu-latest"]
       environment: ${{ github.ref_name == 'master' && 'production' || contains(github.ref_name,'release/') && 'staging' || 'development' }}
       steps:
         - name: Setup node
