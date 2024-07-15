@@ -15,4 +15,4 @@ runs:
           test bash -c "
           yarn install --frozen-lockfile &&
           yarn lint --quiet &&
-          test:cov &&"
+          test:cov"
