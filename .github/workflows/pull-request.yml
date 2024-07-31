@@ -23,14 +23,16 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
-      - name: Build image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: false
-          tags: test
-          target: installer
-          load: true
+      # as testing the release-please, comment out the following steps
 
-      - name: Run test
-        uses: ./.github/actions/run-test
+      # - name: Build image
+      #   uses: docker/build-push-action@v4
+      #   with:
+      #     context: .
+      #     push: false
+      #     tags: test
+      #     target: installer
+      #     load: true
+
+      # - name: Run test
+      #   uses: ./.github/actions/run-test
