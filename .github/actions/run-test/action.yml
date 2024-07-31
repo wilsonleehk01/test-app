@@ -1,0 +1,16 @@
+name: Run test
+description: 'Run test'
+runs:
+  using: 'composite'
+  steps:
+    - name: Run test
+      shell: bash
+      run: |
+        docker run --rm \
+          -v "$PWD/.env.ci:/srv/.env" \
+          --entrypoint "" \
+          test bash -c "
+          yarn --frozen-lockfile &&
+          yarn tsc &&
+          yarn build &&
+          yarn lint --quiet"
