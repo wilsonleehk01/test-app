@@ -1,0 +1,72 @@
+name: Deploy #Workflow name
+on: #trigger
+  workflow_dispatch:
+  push:
+    branches:
+      - 'development'
+      - 'release/**'
+      - 'master'
+env:
+  GH_TOKEN: ${{ github.token }}
+  APP_ENV: ${{ github.ref_name == 'master' && 'production' || contains(github.ref_name,'release/') && 'staging' || 'development' }}
+jobs:
+  main:
+    runs-on: ['ubuntu-latest']
+    environment:
+      name: ${{ github.ref_name == 'master' && 'production' || contains(github.ref_name,'release/') && 'staging' || 'development' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Build image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: false
+          tags: test
+          target: installer
+          load: true
+
+      - name: Run test
+        uses: ./.github/actions/run-test
+
+      - name: Configure git user and email
+        run: |
+          git config user.email "builds@github.com"
+          git config user.name "Github Actions"
+
+      - name: configure image tag
+        run: |
+          echo "tag=v$((${{ github.run_number }} + 100000))-build" >> $GITHUB_ENV
+          echo "TIMESTAMP=$(date)" >> $GITHUB_ENV
+          sleep 5;
+
+      # - name: Build and push
+      #   uses: docker/build-push-action@v4
+      #   with:
+      #     context: .
+      #     push: false
+
+      # - name: Bump version
+      #   if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
+      #   uses: ./.github/actions/bump-version
+      #   with:
+      #     environment: ${{ env.APP_ENV }}
+
+      # - name: Create merge back
+      #   if: ${{ env.APP_ENV == 'production' }}
+      #   uses: ./.github/actions/create-merge-back
+      #   with:
+      #     environment: ${{ env.APP_ENV }}
+
+      - uses: googleapis/release-please-action@v4
+        if: ${{ env.APP_ENV == 'production' }}
+        with:
+          token: ${{ env.GH_TOKEN }}
+          release-type: simple

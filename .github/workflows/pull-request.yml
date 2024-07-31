@@ -1,0 +1,36 @@
+name: Pull Request Check #Workflow name
+on: #trigger
+  pull_request:
+    types: ['opened', 'synchronize'] #create or update PR
+    branches:
+      - 'development'
+      - 'release/**'
+      - 'master'
+env:
+  APP_ENV: ${{ github.ref_name == 'master' && 'production' || contains(github.ref_name,'release/') && 'staging' || 'development' }}
+jobs:
+  main: #Job names
+    runs-on: ['ubuntu-latest']
+    environment:
+      name: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release/') && 'staging' || 'development' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Build image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: false
+          tags: test
+          target: installer
+          load: true
+
+      - name: Run test
+        uses: ./.github/actions/run-test
