@@ -1,0 +1,6 @@
+reportStatus: true
+
+rules:
+  - requiredBodyRegex: '(^|\\s)ok-to-merge-back($|\\s)'
+  - requiredLabels:
+      - dependencies
