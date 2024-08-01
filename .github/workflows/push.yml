@@ -60,21 +60,14 @@ jobs:
       #     context: .
       #     push: false
 
-      # - name: Bump version
-      #   if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
-      #   uses: ./.github/actions/bump-version
-      #   with:
-      #     environment: ${{ env.APP_ENV }}
-
-      # - name: Create merge back
-      #   if: ${{ env.APP_ENV == 'production' }}
-      #   uses: ./.github/actions/create-merge-back
-      #   with:
-      #     environment: ${{ env.APP_ENV }}
-
-      - uses: googleapis/release-please-action@v4
-        if: ${{ env.APP_ENV == 'production' }}
+      - name: Bump version
+        if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
+        uses: ./.github/actions/bump-version
         with:
-          token: ${{ env.GH_TOKEN }}
-          release-type: node
-          target-branch: ${{ github.ref_name }}
+          environment: ${{ env.APP_ENV }}
+
+      - name: Create merge back
+        if: ${{ env.APP_ENV == 'production' }}
+        uses: ./.github/actions/create-merge-back
+        with:
+          environment: ${{ env.APP_ENV }}
