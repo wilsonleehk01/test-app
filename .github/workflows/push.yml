@@ -80,7 +80,6 @@ jobs:
           --repo-url=${{ github.repository }} \
           --release-type=node \
           --target-branch=${{ github.ref_name }} \
-          --skip-github-release=false \
           --versioning-strategy=prerelease \
           --pull-request-title-pattern='bump staging' \
           --pull-request-header='AAA' \
