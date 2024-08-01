@@ -74,14 +74,18 @@ jobs:
 
       - name: release please for staging
         if: ${{ env.APP_ENV == 'staging' || env.APP_ENV == 'development' }}
-        uses: googleapis/release-please-action@v4
-        with:
-          token: ${{ env.GH_TOKEN }}
-          release-type: node
-          target-branch: ${{ github.ref_name }}
-          # manifest-file: .release-please-manifest.json
-          # config-file: release-please-config-staging.json
-          # skip-github-release: true
+        run: |
+          npx release-please release-pr \
+          --token=${{ env.GH_TOKEN }} \
+          --repo-url=${{ github.repository }} \
+          --release-type=node \
+          --target-branch=${{ github.ref_name }} \
+          --skip-github-release=false \
+          --versioning-strategy=prerelease \
+          --pull-request-title-pattern='bump staging' \
+          --pull-request-header='AAA' \
+          --pull-request-footer='BBB' \
+          --skip-labeling=true
 
       - name: release please for production
         if: ${{ env.APP_ENV == 'production' }}
