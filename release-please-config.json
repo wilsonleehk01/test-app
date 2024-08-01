@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "packages": {
-    "test-app": {
+    ".": {
       "changelog-path": "CHANGELOG.md",
       "release-type": "node",
       "pull-request-title-pattern": "Bump staging",
