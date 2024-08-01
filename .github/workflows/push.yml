@@ -60,39 +60,14 @@ jobs:
       #     context: .
       #     push: false
 
-      # - name: Bump version
-      #   if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
-      #   uses: ./.github/actions/bump-version
-      #   with:
-      #     environment: ${{ env.APP_ENV }}
-
-      # - name: Create merge back
-      #   if: ${{ env.APP_ENV == 'production' }}
-      #   uses: ./.github/actions/create-merge-back
-      #   with:
-      #     environment: ${{ env.APP_ENV }}
-
-      - name: release please for staging
-        if: ${{ env.APP_ENV == 'staging' || env.APP_ENV == 'development' }}
-        run: |
-          npx release-please release-pr \
-          --token=${{ env.GH_TOKEN }} \
-          --repo-url=${{ github.repository }} \
-          --release-type=node \
-          --target-branch=${{ github.ref_name }} \
-          --versioning-strategy=prerelease \
-          --pull-request-title-pattern='bump staging' \
-          --pull-request-header='AAA' \
-          --pull-request-footer='BBB' \
-          --skip-labeling=true
-
-      - name: release please for production
-        if: ${{ env.APP_ENV == 'production' }}
-        uses: googleapis/release-please-action@v4
+      - name: Bump version
+        if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
+        uses: ./.github/actions/bump-version
         with:
-          token: ${{ env.GH_TOKEN }}
-          release-type: node
-          target-branch: ${{ github.ref_name }}
-          manifest-file: .release-please-manifest.json
-          config-file: release-please-config-production.json
-          skip-github-release: false
+          environment: ${{ env.APP_ENV }}
+
+      - name: Create merge back
+        if: ${{ env.APP_ENV == 'production' }}
+        uses: ./.github/actions/create-merge-back
+        with:
+          environment: ${{ env.APP_ENV }}

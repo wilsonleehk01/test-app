@@ -1,0 +1,26 @@
+name: Bump version
+description: 'Bump version'
+inputs:
+  environment:
+    required: true
+    description: Environment
+runs:
+  using: 'composite'
+  steps:
+    - shell: bash
+      name: Release staging
+      if: inputs.environment == 'staging'
+      run: yarn release:staging
+    - shell: bash
+      name: Release master
+      if: inputs.environment == 'production'
+      run: yarn release:production
+    - shell: bash
+      name: Create bump version PR
+      if: inputs.environment == 'production' || inputs.environment == 'staging'
+      run: |
+        git checkout -b bump/${{ inputs.environment }}-${{ github.run_number }}
+        git fetch --all
+        git push -u origin HEAD
+        gh pr create -B ${{ github.ref_name }} -t "Bump ${{ inputs.environment }}" -b "ok-to-merge-back" || echo "Failed to create merge back PR!"
+        gh pr merge --auto --merge
