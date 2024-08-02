@@ -11,9 +11,10 @@ runs:
       name: Create merge back PR
       if: inputs.environment == 'production'
       run: |
-        sleep 5
         git checkout -qf master
         git pull origin master
         git fetch origin development
         gh pr create -B development -t "Merge master to development" -b "ok-to-merge-back" || echo "Failed to create merge back PR!"
-        gh pr merge --auto --merge
+        sleep 5
+        echo "Attempting to auto-merge pull request..."
+        gh pr merge --auto --merge || { echo "Failed to auto-merge pull request!"; exit 1; }
