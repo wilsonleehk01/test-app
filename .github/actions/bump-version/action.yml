@@ -23,4 +23,5 @@ runs:
         git fetch --all
         git push -u origin HEAD
         gh pr create -B ${{ github.ref_name }} -t "Bump ${{ inputs.environment }}" -b "ok-to-merge-back" || echo "Failed to create merge back PR!"
-        gh pr merge --auto --merge
+        sleep 3
+        gh pr merge --auto --merge || echo "Failed to auto-merge pull request!"
