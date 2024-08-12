@@ -1,0 +1,4 @@
+[submodule "test-submodule"]
+	path = test-submodule
+	url = git@github.com:wilsonleehk01/test-submodule.git
+	branch = main
