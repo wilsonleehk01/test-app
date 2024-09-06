@@ -7,7 +7,7 @@ on: #trigger
       - 'release/**'
       - 'master'
 env:
-  APP_ENV: ${{ github.ref_name == 'master' && 'production' || contains(github.ref_name,'release/') && 'staging' || 'development' }}
+  APP_ENV: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release/') && 'staging' || 'development' }}
 jobs:
   main: #Job names
     runs-on: ['ubuntu-latest']
