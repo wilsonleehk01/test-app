@@ -74,6 +74,8 @@ jobs:
           git pull
           
           TAG="v$(jq -r .version package.json)"
+          git tag
+          git tag -d $TAG
           git tag $TAG
           git push origin $TAG
 
