@@ -66,18 +66,10 @@ jobs:
         with:
           environment: ${{ env.APP_ENV }}
 
-      - name: Tag
+      - name: Push Tag
         if: ${{ env.APP_ENV == 'production' }}
         run: |
-          git checkout -qf master
-          git fetch --all
-          git pull
-          
-          TAG="v$(jq -r .version package.json)"
-          git tag
-          git tag -d $TAG
-          git tag $TAG
-          git push origin $TAG
+          git push --follow-tags origin master
 
       - name: Create merge back
         if: ${{ env.APP_ENV == 'production' }}
