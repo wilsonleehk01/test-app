@@ -72,16 +72,9 @@ jobs:
         with:
           environment: ${{ env.APP_ENV }}
 
-      - name: Get and create tag
+      - name: Tag
         if: ${{ env.APP_ENV == 'production' }}
         run: |
-          set -e
-          echo "Running next-standard-version to get the tag name..."
-          TAG_NAME=$(npx next-standard-version -p)
-          echo "TAG_NAME is $TAG_NAME"
-          git tag $TAG_NAME
-
-      - name: Push tag
-        if: ${{ env.APP_ENV == 'production' }}
-        run: |
-          git push origin $TAG_NAME
+          TAG="v$(jq -r .version package.json)"
+          git tag $TAG
+          git push origin $TAG
