@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.15.0](https://github.com/wilsonleehk01/test-app/compare/v1.14.0...v1.15.0) (2024-09-06)
+
+
+### Features
+
+* testing 9 ([#88](https://github.com/wilsonleehk01/test-app/issues/88)) ([f8fa52e](https://github.com/wilsonleehk01/test-app/commit/f8fa52e18ed178271a9a6a5092e264dbedfa891e))
+
 ## [1.14.0](https://github.com/wilsonleehk01/test-app/compare/v1.13.0...v1.14.0) (2024-09-06)
 
 
