@@ -69,6 +69,10 @@ jobs:
       - name: Push Tag
         if: ${{ env.APP_ENV == 'production' }}
         run: |
+          git checkout -qf master
+          git fetch --all
+          git pull
+          
           git push --follow-tags origin master
 
       - name: Create merge back
