@@ -71,3 +71,14 @@ jobs:
         uses: ./.github/actions/create-merge-back
         with:
           environment: ${{ env.APP_ENV }}
+
+      - name: Get and create tag
+        if: ${{ env.APP_ENV == 'production' }}
+        run: |
+          TAG_NAME=$(npx next-standard-version -p)
+          git tag $TAG_NAME
+
+      - name: Push tag
+        if: ${{ env.APP_ENV == 'production' }}
+        run: |
+          git push origin $TAG_NAME
