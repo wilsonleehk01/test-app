@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "release:production": "npx commit-and-tag-version --releaseCommitMessageFormat 'chore(release-production): {{currentTag}}' --no-verify",
+    "release:production": "npx commit-and-tag-version --releaseCommitMessageFormat 'chore(release-production): {{currentTag}}' --no-verify --skip.tag=true",
     "release:staging": "npx commit-and-tag-version --releaseCommitMessageFormat 'chore(release-staging): {{currentTag}}' --no-verify --prerelease --skip.changelog --skip.tag"
   },
   "dependencies": {

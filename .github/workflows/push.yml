@@ -73,7 +73,9 @@ jobs:
           git fetch --all
           git pull
           
-          git push --follow-tags origin master
+          TAG="v$(jq -r .version package.json)"
+          git tag $TAG
+          git push origin $TAG
 
       - name: Create merge back
         if: ${{ env.APP_ENV == 'production' }}
