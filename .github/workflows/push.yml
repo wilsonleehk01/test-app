@@ -75,6 +75,9 @@ jobs:
       - name: Tag
         if: ${{ env.APP_ENV == 'production' }}
         run: |
+          git fetch origin
+          git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
+          
           TAG="v$(jq -r .version package.json)"
           git tag $TAG
           git push origin $TAG
