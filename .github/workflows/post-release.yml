@@ -25,7 +25,7 @@ jobs:
         id: create_release_notes
         run: |
           # Extract the latest changelog entry
-          latest_changelog=$(awk '/## \[/{flag=0} /## \[/{flag=1} flag' CHANGELOG.md | head -n -1)
+          latest_changelog=$(awk '/^## \[/{flag=1; next} /^## \[/{flag=0} flag' CHANGELOG.md | sed '/^$/d')
           echo "Latest changelog entry:"
           echo "$latest_changelog"
 
