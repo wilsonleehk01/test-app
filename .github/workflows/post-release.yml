@@ -1,0 +1,44 @@
+name: Post Release
+on:
+  workflow_dispatch:
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  main:
+    runs-on: ['ubuntu-latest']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Tag version
+        run: |
+          git checkout -qf master
+          git fetch --all
+          git pull
+
+          echo "TAG=v$(jq -r .version package.json)" >> $GITHUB_ENV
+          git tag $TAG
+          git push origin $TAG
+
+      - name: Read Changelog and Create Release Notes
+        id: create_release_notes
+        run: |
+          # Extract the latest changelog entry
+          latest_changelog=$(awk '/## \[/{flag=0} /## \[/{flag=1} flag' CHANGELOG.md | head -n -1)
+          echo "Latest changelog entry:"
+          echo "$latest_changelog"
+
+          # Create the release notes
+          echo "::set-output name=release_notes::$latest_changelog"
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.TAG }}
+          name: ${{ env.TAG }}
+          body: ${{ steps.create_release_notes.outputs.release_notes }}
+          draft: false
+          prerelease: false
+          skipIfReleaseExists: true
+          token: ${{ env.GH_TOKEN}}
