@@ -26,12 +26,18 @@ jobs:
         id: create_release_notes
         run: |
           # Extract the latest changelog entry
-          LATEST_CHANGELOG=$(awk '/^## \[/{if (flag) exit; flag=1; next} flag' CHANGELOG.md)
+          LATEST_CHANGELOG=$(awk '/^## \[/{if (flag) exit; flag=1} flag' CHANGELOG.md)
           echo "LATEST_CHANGELOG:"
           echo "$LATEST_CHANGELOG"
 
           # Create the release notes
           echo "LATEST_CHANGELOG=$LATEST_CHANGELOG" >> GITHUB_OUTPUT
+
+      - name: output body
+        env: 
+          LATEST_CHANGELOG: ${{ steps.create_release_notes.outputs.LATEST_CHANGELOG }}
+        run: |
+          echo "$LATEST_CHANGELOG"
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
