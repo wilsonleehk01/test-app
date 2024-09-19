@@ -31,7 +31,7 @@ jobs:
           echo "$LATEST_CHANGELOG"
 
           # Create the release notes
-          echo "LATEST_CHANGELOG=<<EOF" >> $GITHUB_OUTPUT
+          echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT
           echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
