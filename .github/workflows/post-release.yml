@@ -31,9 +31,13 @@ jobs:
           echo "$LATEST_CHANGELOG"
 
           # Create the release notes
-          echo "LATEST_CHANGELOG=$LATEST_CHANGELOG" >> $GITHUB_ENV
+          echo "LATEST_CHANGELOG=<<EOF" >> $GITHUB_OUTPUT
+          echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: output body
+        env: 
+          LATEST_CHANGELOG: ${{ steps.create_release_notes.outputs.LATEST_CHANGELOG }}
         run: |
           echo "$LATEST_CHANGELOG"
 
@@ -42,7 +46,7 @@ jobs:
         with:
           tag: ${{ env.TAG }}
           name: ${{ env.TAG }}
-          body: ${{ env.LATEST_CHANGELOG }}
+          body: ${{ steps.create_release_notes.outputs.LATEST_CHANGELOG }}
           draft: false
           prerelease: false
           skipIfReleaseExists: true
