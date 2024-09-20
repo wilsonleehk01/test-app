@@ -8,16 +8,14 @@ jobs:
     runs-on: ['ubuntu-latest']
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+
+      - name: Read Changelog
+        id: read_changelog
+        uses: ./.github/actions/test-changelog
 
       - name: Tag version
         id: tag_version
         uses: ./.github/actions/tag-version
-
-      - name: Read Changelog and Create Release Notes
-        id: read_changelog
-        uses: ./.github/actions/read-changelog
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
