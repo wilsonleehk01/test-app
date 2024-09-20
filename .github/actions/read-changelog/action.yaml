@@ -1,9 +1,14 @@
 name: Read Changelog
 description: 'Read changelog'
+outputs:
+  LATEST_CHANGELOG:
+    description: 'Changelog content'
+    value: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
 runs:
   using: 'composite'
   steps:
     - name: Read Changelog
+      id: read_changelog
       shell: bash
       run: |
         # Extract the latest changelog entry
@@ -15,6 +20,3 @@ runs:
         echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT
         echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
-
-# Checkout the repo - uses: actions/checkout@v4 with: 
-# Repository name with owner. For example, actions/checkout Default: ${{ github.repository }}
