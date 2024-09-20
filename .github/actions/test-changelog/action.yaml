@@ -3,7 +3,8 @@ description: 'Read changelog'
 runs:
   using: 'composite'
   steps:
-    - shell: bash
+    - name: Read Changelog
+      shell: bash
       run: |
         # Extract the latest changelog entry
         LATEST_CHANGELOG=$(awk '/^## \[/{if (flag) exit; flag=1} flag' CHANGELOG.md)
@@ -14,3 +15,6 @@ runs:
         echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT
         echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
+
+# Checkout the repo - uses: actions/checkout@v4 with: 
+# Repository name with owner. For example, actions/checkout Default: ${{ github.repository }}
