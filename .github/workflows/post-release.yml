@@ -12,42 +12,25 @@ jobs:
           fetch-depth: 0
 
       - name: Tag version
-        run: |
-          git checkout -qf master
-          git fetch --all
-          git pull
-
-          TAG="v$(jq -r .version package.json)"
-          echo "TAG=$TAG" >> $GITHUB_ENV
-          git tag $TAG
-          git push origin $TAG
+        id: tag_version
+        uses: ./.github/actions/tag-version
 
       - name: Read Changelog and Create Release Notes
-        id: create_release_notes
-        run: |
-          # Extract the latest changelog entry
-          LATEST_CHANGELOG=$(awk '/^## \[/{if (flag) exit; flag=1} flag' CHANGELOG.md)
-          echo "LATEST_CHANGELOG:"
-          echo "$LATEST_CHANGELOG"
-
-          # Create the release notes
-          echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT
-          echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: output body
-        env: 
-          LATEST_CHANGELOG: ${{ steps.create_release_notes.outputs.LATEST_CHANGELOG }}
-        run: |
-          echo "$LATEST_CHANGELOG"
+        id: read_changelog
+        uses: ./.github/actions/read-changelog
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ env.TAG }}
-          name: ${{ env.TAG }}
-          body: ${{ steps.create_release_notes.outputs.LATEST_CHANGELOG }}
+          tag: ${{ steps.tag_version.outputs.TAG }}
+          name: ${{ steps.tag_version.outputs.TAG }}
+          body: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
           draft: false
           prerelease: false
           skipIfReleaseExists: true
           token: ${{ env.GH_TOKEN}}
+
+      - name: Create merge back
+        uses: ./.github/actions/create-merge-back
+        with:
+          environment: 'production'
