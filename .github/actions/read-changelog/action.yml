@@ -1,0 +1,16 @@
+name: Read Changelog
+description: 'Read changelog'
+runs:
+  using: 'composite'
+  steps:
+    - shell: bash
+      run: |
+        # Extract the latest changelog entry
+        LATEST_CHANGELOG=$(awk '/^## \[/{if (flag) exit; flag=1} flag' CHANGELOG.md)
+        echo "LATEST_CHANGELOG:"
+        echo "$LATEST_CHANGELOG"
+
+        # output the release notes
+        echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT
+        echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
