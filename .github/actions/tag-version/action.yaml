@@ -6,6 +6,7 @@ runs:
     - name: Tag Version
       shell: bash
       run: |
+          git branch
           git checkout -qf master
           git fetch --all
           git pull
