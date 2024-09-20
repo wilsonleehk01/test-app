@@ -11,7 +11,7 @@ jobs:
 
       - name: Read Changelog
         id: read_changelog
-        uses: ./.github/actions/test-changelog
+        uses: ./.github/actions/read-changelog
 
       - name: Tag version
         id: tag_version
