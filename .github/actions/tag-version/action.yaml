@@ -1,0 +1,17 @@
+name: Tag Version
+description: 'Get version number from package.json'
+runs:
+  using: 'composite'
+  steps:
+    - name: Tag Version
+      shell: bash
+      run: |
+          git branch
+          git checkout -qf master
+          git fetch --all
+          git pull
+
+          TAG="v$(jq -r .version package.json)"
+          echo "TAG=$TAG" >> $GITHUB_OUTPUT
+          git tag $TAG
+          git push origin $TAG

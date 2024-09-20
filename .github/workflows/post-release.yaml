@@ -1,0 +1,34 @@
+name: Post Release
+on:
+  workflow_dispatch:
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  main:
+    runs-on: ['ubuntu-latest']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read Changelog
+        id: read_changelog
+        uses: ./.github/actions/read-changelog
+
+      - name: Tag version
+        id: tag_version
+        uses: ./.github/actions/tag-version
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.tag_version.outputs.TAG }}
+          name: ${{ steps.tag_version.outputs.TAG }}
+          body: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
+          draft: false
+          prerelease: false
+          skipIfReleaseExists: true
+          token: ${{ env.GH_TOKEN}}
+
+      - name: Create merge back
+        uses: ./.github/actions/create-merge-back
+        with:
+          environment: 'production'
