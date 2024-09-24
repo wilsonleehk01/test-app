@@ -1,20 +1,20 @@
 name: Read Changelog
-description: 'Read changelog'
+description: "Read changelog"
+outputs:
+  LATEST_CHANGELOG:
+    description: "Changelog content"
+    value: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Read Changelog
+      id: read_changelog
       shell: bash
       run: |
         # Extract the latest changelog entry
-        LATEST_CHANGELOG=$(awk '/^## \[/{if (flag) exit; flag=1} flag' CHANGELOG.md)
-        echo "LATEST_CHANGELOG:"
-        echo "$LATEST_CHANGELOG"
+        LATEST_CHANGELOG=$(awk '/^## /{if (flag) exit; flag=1} flag' CHANGELOG.md)
 
         # output the release notes
         echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT
         echo "$LATEST_CHANGELOG" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
-
-# Checkout the repo - uses: actions/checkout@v4 with: 
-# Repository name with owner. For example, actions/checkout Default: ${{ github.repository }}
