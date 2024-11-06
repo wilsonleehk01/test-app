@@ -60,25 +60,25 @@ jobs:
       #     context: .
       #     push: false
 
-      - name: Bump version
-        if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
-        uses: ./.github/actions/bump-version
-        with:
-          environment: ${{ env.APP_ENV }}
+      # - name: Bump version
+      #   if: ${{ env.APP_ENV == 'production' || env.APP_ENV == 'staging' }}
+      #   uses: ./.github/actions/bump-version
+      #   with:
+      #     environment: ${{ env.APP_ENV }}
 
-      - name: Push Tag
-        if: ${{ env.APP_ENV == 'production' }}
-        run: |
-          git checkout -qf master
-          git fetch --all
-          git pull
+      # - name: Push Tag
+      #   if: ${{ env.APP_ENV == 'production' }}
+      #   run: |
+      #     git checkout -qf master
+      #     git fetch --all
+      #     git pull
           
-          TAG="v$(jq -r .version package.json)"
-          git tag $TAG
-          git push origin $TAG
+      #     TAG="v$(jq -r .version package.json)"
+      #     git tag $TAG
+      #     git push origin $TAG
 
-      - name: Create merge back
-        if: ${{ env.APP_ENV == 'production' }}
-        uses: ./.github/actions/create-merge-back
-        with:
-          environment: ${{ env.APP_ENV }}
+      # - name: Create merge back
+      #   if: ${{ env.APP_ENV == 'production' }}
+      #   uses: ./.github/actions/create-merge-back
+      #   with:
+      #     environment: ${{ env.APP_ENV }}

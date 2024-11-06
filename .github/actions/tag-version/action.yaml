@@ -5,18 +5,18 @@ outputs:
     description: 'Tag version'
     value: ${{ steps.tag_version.outputs.TAG }}
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Tag Version
       id: tag_version
       shell: bash
       run: |
-          git branch -a
-          git checkout -qf master
-          git fetch --all
-          git pull
+        git branch -a
+        git checkout -qf master
+        git fetch --all
+        git pull
 
-          TAG="v$(jq -r .version package.json)"
-          echo "TAG=$TAG" >> $GITHUB_OUTPUT
-          git tag $TAG
-          git push origin $TAG
+        TAG="v$(jq -r .version package.json)"
+        echo "TAG=$TAG" >> $GITHUB_OUTPUT
+        git tag $TAG
+        git push origin $TAG

@@ -20,7 +20,7 @@ jobs:
         id: tag_version
         uses: ./.github/actions/tag-version
 
-      - name: Show output vars
+      - name: Show Output Vars
         run: |
           echo "TAG: ${{ steps.tag_version.outputs.TAG }}"
           echo "LATEST_CHANGELOG: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
