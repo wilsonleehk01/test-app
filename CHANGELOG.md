@@ -2,330 +2,91 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
-## [1.16.0](https://github.com/wilsonleehk01/test-app/compare/v1.14.0...v1.16.0) (2024-09-20)
-
-
-### Features
-
-* testing 9 ([#88](https://github.com/wilsonleehk01/test-app/issues/88)) ([f8fa52e](https://github.com/wilsonleehk01/test-app/commit/f8fa52e18ed178271a9a6a5092e264dbedfa891e))
-
-## [1.15.0](https://github.com/wilsonleehk01/test-app/compare/v1.14.0...v1.15.0) (2024-09-06)
-
+## [0.2.0](https://github.com/wilsonleehk01/test-app/compare/v0.1.0...v0.2.0) (2024-09-24)
 
 ### Features
 
-* testing 9 ([#88](https://github.com/wilsonleehk01/test-app/issues/88)) ([f8fa52e](https://github.com/wilsonleehk01/test-app/commit/f8fa52e18ed178271a9a6a5092e264dbedfa891e))
-
-## [1.14.0](https://github.com/wilsonleehk01/test-app/compare/v1.13.0...v1.14.0) (2024-09-06)
-
-
-### Features
-
-* test 6 ([4c65db1](https://github.com/wilsonleehk01/test-app/commit/4c65db100661905523fb0b5dfd596ae6a40b810e))
-
-## [1.13.0](https://github.com/wilsonleehk01/test-app/compare/v1.12.0...v1.13.0) (2024-09-06)
-
-
-### Features
-
-* test ([#81](https://github.com/wilsonleehk01/test-app/issues/81)) ([06581e2](https://github.com/wilsonleehk01/test-app/commit/06581e273e221314144bacef6c34299032b88644))
-
-## [1.12.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.12.0) (2024-09-06)
-
-
-### Features
-
-* add submodule ([#57](https://github.com/wilsonleehk01/test-app/issues/57)) ([5dd5451](https://github.com/wilsonleehk01/test-app/commit/5dd54512c36231e26643be033dc797ca33fa8825))
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test ([#63](https://github.com/wilsonleehk01/test-app/issues/63)) ([4b75ea2](https://github.com/wilsonleehk01/test-app/commit/4b75ea2bf47a6eb4359330280011c172022826f7))
-* test 2 ([#67](https://github.com/wilsonleehk01/test-app/issues/67)) ([762237c](https://github.com/wilsonleehk01/test-app/commit/762237ccdf8697131ef4b4d1756bf70bd58d3603))
-* test 3 ([#71](https://github.com/wilsonleehk01/test-app/issues/71)) ([9026047](https://github.com/wilsonleehk01/test-app/commit/9026047e5deb02388ba256647765b1f9a05844b2))
-* test 4 ([#75](https://github.com/wilsonleehk01/test-app/issues/75)) ([8b97f81](https://github.com/wilsonleehk01/test-app/commit/8b97f81289e2f6870c9f6c55ba4e6eadf58878ab))
-* test 5 ([279da1a](https://github.com/wilsonleehk01/test-app/commit/279da1a996c36b1292970638860a132d287507dc))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
+- GROWTH-4296 nav bar - big menu ([#49](https://github.com/hk01-digital/hk01-web-cn/issues/49)) ([9b7fedd](https://github.com/hk01-digital/hk01-web-cn/commit/9b7fedd6c9105d4729863286b215d4a94b914a55))
 
 ### Bug Fixes
 
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
+- GROWTH-4302 fix zone page request ([#85](https://github.com/hk01-digital/hk01-web-cn/issues/85)) ([8c8c652](https://github.com/hk01-digital/hk01-web-cn/commit/8c8c652fb34aaa69366168d676803cdd5d52f1a1))
 
-## [1.11.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.11.0) (2024-09-06)
-
+## 0.1.0 (2024-09-23)
 
 ### Features
 
-* add submodule ([#57](https://github.com/wilsonleehk01/test-app/issues/57)) ([5dd5451](https://github.com/wilsonleehk01/test-app/commit/5dd54512c36231e26643be033dc797ca33fa8825))
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test ([#63](https://github.com/wilsonleehk01/test-app/issues/63)) ([4b75ea2](https://github.com/wilsonleehk01/test-app/commit/4b75ea2bf47a6eb4359330280011c172022826f7))
-* test 2 ([#67](https://github.com/wilsonleehk01/test-app/issues/67)) ([762237c](https://github.com/wilsonleehk01/test-app/commit/762237ccdf8697131ef4b4d1756bf70bd58d3603))
-* test 3 ([#71](https://github.com/wilsonleehk01/test-app/issues/71)) ([9026047](https://github.com/wilsonleehk01/test-app/commit/9026047e5deb02388ba256647765b1f9a05844b2))
-* test 4 ([#75](https://github.com/wilsonleehk01/test-app/issues/75)) ([8b97f81](https://github.com/wilsonleehk01/test-app/commit/8b97f81289e2f6870c9f6c55ba4e6eadf58878ab))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
+- add base page ([#126](https://github.com/hk01-digital/hk01-web-cn/issues/126)) ([75cb97e](https://github.com/hk01-digital/hk01-web-cn/commit/75cb97e23bf58aabef9a8b88239ea64bb26e5fba))
+- **channel:** add ads ([#76](https://github.com/hk01-digital/hk01-web-cn/issues/76)) ([cffd4fc](https://github.com/hk01-digital/hk01-web-cn/commit/cffd4fc2385ab5207109dc46d8853cc817bbb3be))
+- **channel:** GROWTH-4306 get data from api ([#39](https://github.com/hk01-digital/hk01-web-cn/issues/39)) ([e99d86c](https://github.com/hk01-digital/hk01-web-cn/commit/e99d86caf116efdabb1c7188f59f940910b95e81))
+- **channel:** GROWTH-4306 get latest articles data from api ([#61](https://github.com/hk01-digital/hk01-web-cn/issues/61)) ([c8bcd3a](https://github.com/hk01-digital/hk01-web-cn/commit/c8bcd3a5adac355f49be487e03a69b60f404cf83))
+- **channel:** GROWTH-4375 submenu ([#41](https://github.com/hk01-digital/hk01-web-cn/issues/41)) ([558a998](https://github.com/hk01-digital/hk01-web-cn/commit/558a9981f83e61119d8cd09128c25d938b142df4))
+- **deps:** upgrade nextjs to 14.2.7 ([#67](https://github.com/hk01-digital/hk01-web-cn/issues/67)) ([4b5ecb6](https://github.com/hk01-digital/hk01-web-cn/commit/4b5ecb6621209e262f957374404c21ad8bf42b84))
+- GROWTH-4275 add ad container ([#36](https://github.com/hk01-digital/hk01-web-cn/issues/36)) ([e09fe7c](https://github.com/hk01-digital/hk01-web-cn/commit/e09fe7c5f0b54b706252fe7a9fdaef7663266483))
+- GROWTH-4275 add base ad slot ([#27](https://github.com/hk01-digital/hk01-web-cn/issues/27)) ([7eee1e6](https://github.com/hk01-digital/hk01-web-cn/commit/7eee1e68e58594e5e62b90daa212287589a056a6))
+- GROWTH-4296 activate nav link by comparing url ([#72](https://github.com/hk01-digital/hk01-web-cn/issues/72)) ([b1d3f55](https://github.com/hk01-digital/hk01-web-cn/commit/b1d3f555a9f750b0909221c106dd814a5414a097))
+- GROWTH-4296 nav bar - big menu ([#49](https://github.com/hk01-digital/hk01-web-cn/issues/49)) ([9b7fedd](https://github.com/hk01-digital/hk01-web-cn/commit/9b7fedd6c9105d4729863286b215d4a94b914a55))
+- GROWTH-4296 nav bar - hide hot & latest in big menu ([#57](https://github.com/hk01-digital/hk01-web-cn/issues/57)) ([8d39bdf](https://github.com/hk01-digital/hk01-web-cn/commit/8d39bdfb4a10763984605d49e3350780b2743d05))
+- GROWTH-4296 nav bar - horizontal ([#35](https://github.com/hk01-digital/hk01-web-cn/issues/35)) ([331aa91](https://github.com/hk01-digital/hk01-web-cn/commit/331aa91053bd102ffdbbd94e863e95192487e43d))
+- GROWTH-4296 nav bar - use API data ([#55](https://github.com/hk01-digital/hk01-web-cn/issues/55)) ([8a7bdd9](https://github.com/hk01-digital/hk01-web-cn/commit/8a7bdd99d44a3153bdd5990881b7970ce6da8634))
+- GROWTH-4296 update actionLink if actionType is not CUSTOM_URL ([#112](https://github.com/hk01-digital/hk01-web-cn/issues/112)) ([dc4482f](https://github.com/hk01-digital/hk01-web-cn/commit/dc4482fd983dbe70a047cc4e99bae82fa349efc5))
+- GROWTH-4302 add cache for server request ([#58](https://github.com/hk01-digital/hk01-web-cn/issues/58)) ([7a37de3](https://github.com/hk01-digital/hk01-web-cn/commit/7a37de3bce81f3035133db8ec240e4519c589294))
+- GROWTH-4302 add content card click track ([#82](https://github.com/hk01-digital/hk01-web-cn/issues/82)) ([31e20bd](https://github.com/hk01-digital/hk01-web-cn/commit/31e20bd0b0bd43311f674199a358a940bae143f8))
+- GROWTH-4302 add device com ([#122](https://github.com/hk01-digital/hk01-web-cn/issues/122)) ([662ab87](https://github.com/hk01-digital/hk01-web-cn/commit/662ab8797ad7af0be9e7951e8a5f4fd1a44b8bb8))
+- GROWTH-4302 add device context provider ([#94](https://github.com/hk01-digital/hk01-web-cn/issues/94)) ([1826926](https://github.com/hk01-digital/hk01-web-cn/commit/1826926fe4627473081b0127a582687b3bf128e1))
+- GROWTH-4302 add link component ([#78](https://github.com/hk01-digital/hk01-web-cn/issues/78)) ([98a4f05](https://github.com/hk01-digital/hk01-web-cn/commit/98a4f0587715076cd32583f0916fce30d3824626))
+- GROWTH-4302 add more track ([#88](https://github.com/hk01-digital/hk01-web-cn/issues/88)) ([3e88cc2](https://github.com/hk01-digital/hk01-web-cn/commit/3e88cc2abf3175656467028de727bb24c9ba7a86))
+- GROWTH-4302 add zone layzout ([#53](https://github.com/hk01-digital/hk01-web-cn/issues/53)) ([c5f95f7](https://github.com/hk01-digital/hk01-web-cn/commit/c5f95f795fdd68757a57c4a9821f88c10704fcf5))
+- GROWTH-4302 add zone page meta ([#68](https://github.com/hk01-digital/hk01-web-cn/issues/68)) ([22644bd](https://github.com/hk01-digital/hk01-web-cn/commit/22644bd174c456e3b63a6e22833cdbbf0850ff30))
+- GROWTH-4302 fix some action do not fire track ([#125](https://github.com/hk01-digital/hk01-web-cn/issues/125)) ([b62d796](https://github.com/hk01-digital/hk01-web-cn/commit/b62d796429b49e394e8d922ddefd48d5d9e9a0e2))
+- GROWTH-4305 add section type and change content card type ([#42](https://github.com/hk01-digital/hk01-web-cn/issues/42)) ([501d54a](https://github.com/hk01-digital/hk01-web-cn/commit/501d54a632b50bf64d7c5d68e5ef7522f5ded856))
+- GROWTH-4305 add zone api request ([#40](https://github.com/hk01-digital/hk01-web-cn/issues/40)) ([91d0dc3](https://github.com/hk01-digital/hk01-web-cn/commit/91d0dc3f149a42c77d412619e5a8113c359883fc))
+- GROWTH-4314 add footer ([#90](https://github.com/hk01-digital/hk01-web-cn/issues/90)) ([16c00d1](https://github.com/hk01-digital/hk01-web-cn/commit/16c00d15d56bfcca2dac4be5e940f276a78d2a55))
+- GROWTH-4316 add base content card ([#15](https://github.com/hk01-digital/hk01-web-cn/issues/15)) ([138f522](https://github.com/hk01-digital/hk01-web-cn/commit/138f522cf7d72830e21b445dbcddc9f7b135ebcd))
+- GROWTH-4316 add content card index and pgc card ([#17](https://github.com/hk01-digital/hk01-web-cn/issues/17)) ([2d4d280](https://github.com/hk01-digital/hk01-web-cn/commit/2d4d280446efe24fa43cab91d6e030e5a9770589))
+- GROWTH-4316 add image wrapper component ([#11](https://github.com/hk01-digital/hk01-web-cn/issues/11)) ([3bf0946](https://github.com/hk01-digital/hk01-web-cn/commit/3bf0946e009403c48469fcbcf8d2f93c8ed93da1))
+- GROWTH-4316 add inlineVideo, video, gallery and issue card ([#22](https://github.com/hk01-digital/hk01-web-cn/issues/22)) ([da7a7e5](https://github.com/hk01-digital/hk01-web-cn/commit/da7a7e5ffe44e263d00e1ab80b1f03b2051c281b))
+- GROWTH-4317 add other display card ([#48](https://github.com/hk01-digital/hk01-web-cn/issues/48)) ([a175db8](https://github.com/hk01-digital/hk01-web-cn/commit/a175db8ceef18dc9634e52e49b05f5563d206550))
+- GROWTH-4317 add section container ([#50](https://github.com/hk01-digital/hk01-web-cn/issues/50)) ([0cfadf8](https://github.com/hk01-digital/hk01-web-cn/commit/0cfadf8401df3e8f7b66f48a42c2e2f55eadb7bd))
+- GROWTH-4317 add section display ([#44](https://github.com/hk01-digital/hk01-web-cn/issues/44)) ([863f942](https://github.com/hk01-digital/hk01-web-cn/commit/863f94285d6daab0203b53aef52e24c8fde291ea))
+- GROWTH-4318 base layout ([#24](https://github.com/hk01-digital/hk01-web-cn/issues/24)) ([f3184f6](https://github.com/hk01-digital/hk01-web-cn/commit/f3184f6bd47e4c87ec06c6cdafd43b555197be39))
+- GROWTH-4325 add 1\*1 ad ([#111](https://github.com/hk01-digital/hk01-web-cn/issues/111)) ([b9bc9de](https://github.com/hk01-digital/hk01-web-cn/commit/b9bc9de576d70095bb8587eb6366dbe2e19bf7fa))
+- GROWTH-4325 add ad layout and key_values ([#73](https://github.com/hk01-digital/hk01-web-cn/issues/73)) ([eaec8a7](https://github.com/hk01-digital/hk01-web-cn/commit/eaec8a7b43c93087de97216f244695ae69a2c2bf))
+- GROWTH-4325 add ad slot ([#66](https://github.com/hk01-digital/hk01-web-cn/issues/66)) ([4dc2e7a](https://github.com/hk01-digital/hk01-web-cn/commit/4dc2e7a51c4012b17b3f830455dbb1b702120b92))
+- GROWTH-4325 add ad track ([#86](https://github.com/hk01-digital/hk01-web-cn/issues/86)) ([1f19e71](https://github.com/hk01-digital/hk01-web-cn/commit/1f19e71cd237bc20dbee97a4d6fb2f55ce2ce2f1))
+- GROWTH-4325 add home page ad ([#127](https://github.com/hk01-digital/hk01-web-cn/issues/127)) ([9f0494e](https://github.com/hk01-digital/hk01-web-cn/commit/9f0494e7f42425a8de25b68e3eca4b2e43eab225))
+- GROWTH-4326 remove extra border around zone slider ([#114](https://github.com/hk01-digital/hk01-web-cn/issues/114)) ([ee85d6a](https://github.com/hk01-digital/hk01-web-cn/commit/ee85d6a99547e7a65fb6e6f580accb6041819ad0))
+- GROWTH-4326 zone slider ([#96](https://github.com/hk01-digital/hk01-web-cn/issues/96)) ([208c4ae](https://github.com/hk01-digital/hk01-web-cn/commit/208c4ae1bca9df8fe07410b631e996883a2e48c5))
+- GROWTH-4350 basic utils of data tracking ([#56](https://github.com/hk01-digital/hk01-web-cn/issues/56)) ([f0b23b4](https://github.com/hk01-digital/hk01-web-cn/commit/f0b23b4fb32cca5d8bf168854ae3ef9de4a2b1f3))
+- GROWTH-4350 track ARTICLE_VIEW ([#80](https://github.com/hk01-digital/hk01-web-cn/issues/80)) ([7bc12fb](https://github.com/hk01-digital/hk01-web-cn/commit/7bc12fb452b049683cd90d4d78332aca7f2c6027))
+- GROWTH-4350 track PAGE_VIEW globally ([#64](https://github.com/hk01-digital/hk01-web-cn/issues/64)) ([34b2d20](https://github.com/hk01-digital/hk01-web-cn/commit/34b2d202f61ecf62f64a423460bcf4c1f5f53c66))
+- GROWTH-4354 icon components ([#21](https://github.com/hk01-digital/hk01-web-cn/issues/21)) ([8e6e8d7](https://github.com/hk01-digital/hk01-web-cn/commit/8e6e8d75aa444b1aa0788712baa3b5b437a8f121))
+- GROWTH-4360 add APP_ENV & VERSION in **HK01_APP_DATA** ([#84](https://github.com/hk01-digital/hk01-web-cn/issues/84)) ([8987c30](https://github.com/hk01-digital/hk01-web-cn/commit/8987c307816bd78ad57a4ceda05ac78e5def52de))
+- GROWTH-4360 get VERSION by nextConfig env ([#87](https://github.com/hk01-digital/hk01-web-cn/issues/87)) ([1eda6c7](https://github.com/hk01-digital/hk01-web-cn/commit/1eda6c7c8a371dd18f6253ee441aa992f7a8e1f3))
+- GROWTH-4360 require package.json to get VERSION ([#102](https://github.com/hk01-digital/hk01-web-cn/issues/102)) ([50cf814](https://github.com/hk01-digital/hk01-web-cn/commit/50cf814553dbbf946d473d89d4a71da86034a4f6)), closes [/github.com/hk01-digital/hk01-web-cn/pull/87#discussion_r1749493332](https://github.com/hk01-digital//github.com/hk01-digital/hk01-web-cn/pull/87/issues/discussion_r1749493332)
+- **json-ld:** add breadcrumb list for home & article ([#107](https://github.com/hk01-digital/hk01-web-cn/issues/107)) ([110ee23](https://github.com/hk01-digital/hk01-web-cn/commit/110ee237a2342aeb99ef9f23838bdcd96c5e25de))
+- **json-ld:** add breadcrumblist for zone & channel page ([#106](https://github.com/hk01-digital/hk01-web-cn/issues/106)) ([ac3fc28](https://github.com/hk01-digital/hk01-web-cn/commit/ac3fc28ee0fa803901fdc705bba9a904ce37fef0))
+- **json-ld:** add news article for article ([5850104](https://github.com/hk01-digital/hk01-web-cn/commit/5850104fb8519110d6de4cf554194affe8dd6e82))
+- **json-ld:** add organization for all pages ([#108](https://github.com/hk01-digital/hk01-web-cn/issues/108)) ([27559c2](https://github.com/hk01-digital/hk01-web-cn/commit/27559c29437b1dcbc5701e60fa6fb36da287dbba))
+- **json-ld:** add video object for article ([bb082b9](https://github.com/hk01-digital/hk01-web-cn/commit/bb082b951ac05668e5b43d99fe042471647ad9ce))
+- **metadata:** update lang code & alternate url ([#98](https://github.com/hk01-digital/hk01-web-cn/issues/98)) ([97e6694](https://github.com/hk01-digital/hk01-web-cn/commit/97e669417059c6cf0e35cdc25ebb4dc06bd0ec15))
+- **track:** GROWTH-4350 remove isToRedirect checking ([#103](https://github.com/hk01-digital/hk01-web-cn/issues/103)) ([2a028b7](https://github.com/hk01-digital/hk01-web-cn/commit/2a028b7afc7f29d3cefbd68c5f96de8973f158f1))
+- **type:** add article block type ([b706648](https://github.com/hk01-digital/hk01-web-cn/commit/b706648f85023c5587256a80c54ca5d2553939ee))
 
 ### Bug Fixes
 
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.10.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.10.0) (2024-09-06)
-
-
-### Features
-
-* add submodule ([#57](https://github.com/wilsonleehk01/test-app/issues/57)) ([5dd5451](https://github.com/wilsonleehk01/test-app/commit/5dd54512c36231e26643be033dc797ca33fa8825))
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test ([#63](https://github.com/wilsonleehk01/test-app/issues/63)) ([4b75ea2](https://github.com/wilsonleehk01/test-app/commit/4b75ea2bf47a6eb4359330280011c172022826f7))
-* test 2 ([#67](https://github.com/wilsonleehk01/test-app/issues/67)) ([762237c](https://github.com/wilsonleehk01/test-app/commit/762237ccdf8697131ef4b4d1756bf70bd58d3603))
-* test 3 ([#71](https://github.com/wilsonleehk01/test-app/issues/71)) ([9026047](https://github.com/wilsonleehk01/test-app/commit/9026047e5deb02388ba256647765b1f9a05844b2))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.9.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.9.0) (2024-09-06)
-
-
-### Features
-
-* add submodule ([#57](https://github.com/wilsonleehk01/test-app/issues/57)) ([5dd5451](https://github.com/wilsonleehk01/test-app/commit/5dd54512c36231e26643be033dc797ca33fa8825))
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test ([#63](https://github.com/wilsonleehk01/test-app/issues/63)) ([4b75ea2](https://github.com/wilsonleehk01/test-app/commit/4b75ea2bf47a6eb4359330280011c172022826f7))
-* test 2 ([#67](https://github.com/wilsonleehk01/test-app/issues/67)) ([762237c](https://github.com/wilsonleehk01/test-app/commit/762237ccdf8697131ef4b4d1756bf70bd58d3603))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.8.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.8.0) (2024-09-06)
-
-
-### Features
-
-* add submodule ([#57](https://github.com/wilsonleehk01/test-app/issues/57)) ([5dd5451](https://github.com/wilsonleehk01/test-app/commit/5dd54512c36231e26643be033dc797ca33fa8825))
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test ([#63](https://github.com/wilsonleehk01/test-app/issues/63)) ([4b75ea2](https://github.com/wilsonleehk01/test-app/commit/4b75ea2bf47a6eb4359330280011c172022826f7))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.7.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.7.0) (2024-09-06)
-
-
-### Features
-
-* add submodule ([#57](https://github.com/wilsonleehk01/test-app/issues/57)) ([5dd5451](https://github.com/wilsonleehk01/test-app/commit/5dd54512c36231e26643be033dc797ca33fa8825))
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.6.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.6.0) (2024-08-02)
-
-
-### Features
-
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat ([#52](https://github.com/wilsonleehk01/test-app/issues/52)) ([13a22f7](https://github.com/wilsonleehk01/test-app/commit/13a22f7cc483a5cccaf7f6ea754418315dd509f3))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.5.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.5.0) (2024-08-02)
-
-
-### Features
-
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat ([#47](https://github.com/wilsonleehk01/test-app/issues/47)) ([0701df5](https://github.com/wilsonleehk01/test-app/commit/0701df533f48731d7784be27a7bacd84f779517c))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.4.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.4.0) (2024-08-02)
-
-
-### Features
-
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-* test-fix ([#42](https://github.com/wilsonleehk01/test-app/issues/42)) ([9892fa9](https://github.com/wilsonleehk01/test-app/commit/9892fa98fd5673ea09acb4b442dc04f2ad3f8ecb))
-
-## [1.3.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.3.0) (2024-08-01)
-
-
-### Features
-
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat ([#37](https://github.com/wilsonleehk01/test-app/issues/37)) ([1ce900c](https://github.com/wilsonleehk01/test-app/commit/1ce900c20aff86f7c4c9add9cc470b4eb1f57201))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-
-## [1.2.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.2.0) (2024-08-01)
-
-
-### Features
-
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-
-## [1.1.0](https://github.com/wilsonleehk01/test-app/compare/v1.0.0...v1.1.0) (2024-08-01)
-
-
-### Features
-
-* test ([#22](https://github.com/wilsonleehk01/test-app/issues/22)) ([86be05a](https://github.com/wilsonleehk01/test-app/commit/86be05a395059792376fc1f94d42b3bfe25d3f1c))
-* test feat5 ([#13](https://github.com/wilsonleehk01/test-app/issues/13)) ([d186baf](https://github.com/wilsonleehk01/test-app/commit/d186baf1839525dbd9aeb86129ca750aad268271))
-* test-feat ([#20](https://github.com/wilsonleehk01/test-app/issues/20)) ([9a00ff9](https://github.com/wilsonleehk01/test-app/commit/9a00ff96692572567983e7b1a71b944e7acb1504))
-* test-feat ([#24](https://github.com/wilsonleehk01/test-app/issues/24)) ([cb43ae2](https://github.com/wilsonleehk01/test-app/commit/cb43ae2c98c8ee9881d08836267248280e29d84f))
-* test-feat4 ([#11](https://github.com/wilsonleehk01/test-app/issues/11)) ([5773f7b](https://github.com/wilsonleehk01/test-app/commit/5773f7ba0df8dbf307af6af93b4c21a3e142dcbf))
-* test-feat6 ([#15](https://github.com/wilsonleehk01/test-app/issues/15)) ([bf2b02f](https://github.com/wilsonleehk01/test-app/commit/bf2b02fd52f805ca30848a3968b54e01fe6325da))
-* test-feat7 ([#18](https://github.com/wilsonleehk01/test-app/issues/18)) ([6fd737b](https://github.com/wilsonleehk01/test-app/commit/6fd737b3b5754dbbdc9656fb5e0ce97e04564598))
-
-
-### Bug Fixes
-
-* fix-test ([#30](https://github.com/wilsonleehk01/test-app/issues/30)) ([389b961](https://github.com/wilsonleehk01/test-app/commit/389b961e8357fb5d7d55949a048cad1b4c56019a))
-* test-fix ([#25](https://github.com/wilsonleehk01/test-app/issues/25)) ([b68162a](https://github.com/wilsonleehk01/test-app/commit/b68162a953f8ce69aaa52e0591c72a3f9e1883d7))
-
-## 1.0.0 (2024-07-31)
-
-
-### Features
-
-* test-feat ([#3](https://github.com/wilsonleehk01/test-app/issues/3)) ([a44e4f8](https://github.com/wilsonleehk01/test-app/commit/a44e4f820822bc4268dae64b9a947ff3f690897f))
-* test-feat2 ([#5](https://github.com/wilsonleehk01/test-app/issues/5)) ([886d37a](https://github.com/wilsonleehk01/test-app/commit/886d37a985b453081e0b065afe60da1b145b74b9))
-* test-feat3 ([#8](https://github.com/wilsonleehk01/test-app/issues/8)) ([bdef23e](https://github.com/wilsonleehk01/test-app/commit/bdef23e48a6051a6f1291d77c87495f33b0aa407))
-
-## 1.0.0 (2024-07-31)
-
-
-### Features
-
-* test-feat ([#3](https://github.com/wilsonleehk01/test-app/issues/3)) ([a44e4f8](https://github.com/wilsonleehk01/test-app/commit/a44e4f820822bc4268dae64b9a947ff3f690897f))
-* test-feat2 ([#5](https://github.com/wilsonleehk01/test-app/issues/5)) ([886d37a](https://github.com/wilsonleehk01/test-app/commit/886d37a985b453081e0b065afe60da1b145b74b9))
+- add screen info in loadmore track ([#135](https://github.com/hk01-digital/hk01-web-cn/issues/135)) ([45295fb](https://github.com/hk01-digital/hk01-web-cn/commit/45295fba56afdead4930b9de39c0976fa8e20ad4))
+- change window.location.hostname to process.env to avoid react 418 error ([#104](https://github.com/hk01-digital/hk01-web-cn/issues/104)) ([0901f8c](https://github.com/hk01-digital/hk01-web-cn/commit/0901f8c2b63054906e9fa32572bd81ce06500800))
+- **demo:** home banner should allow CMS uploaded img ([#34](https://github.com/hk01-digital/hk01-web-cn/issues/34)) ([ea819e1](https://github.com/hk01-digital/hk01-web-cn/commit/ea819e1362b729c136e66f251b242627f3cdc9a1))
+- fix react-425 error ([#70](https://github.com/hk01-digital/hk01-web-cn/issues/70)) ([fd26ef3](https://github.com/hk01-digital/hk01-web-cn/commit/fd26ef3f195e1dee3a7d22221a536d6e05a21076))
+- fix zone page ad position on mobile ([#134](https://github.com/hk01-digital/hk01-web-cn/issues/134)) ([5f960fc](https://github.com/hk01-digital/hk01-web-cn/commit/5f960fc036b6be4489991aead55c66705536e941))
+- GROWTH-4275 fix ad slot type ([#43](https://github.com/hk01-digital/hk01-web-cn/issues/43)) ([a7ea1e0](https://github.com/hk01-digital/hk01-web-cn/commit/a7ea1e052013b6a57db85bb4ad187ffe0c2f9909))
+- GROWTH-4302 fix findDomnode error ([#69](https://github.com/hk01-digital/hk01-web-cn/issues/69)) ([2d71f94](https://github.com/hk01-digital/hk01-web-cn/commit/2d71f94c589401fc3953daf2362f5fc8b3d1c599))
+- GROWTH-4302 fix zone page request ([#85](https://github.com/hk01-digital/hk01-web-cn/issues/85)) ([8c8c652](https://github.com/hk01-digital/hk01-web-cn/commit/8c8c652fb34aaa69366168d676803cdd5d52f1a1))
+- GROWTH-4304 fix splash ad not show ([#89](https://github.com/hk01-digital/hk01-web-cn/issues/89)) ([6f1434e](https://github.com/hk01-digital/hk01-web-cn/commit/6f1434e51067d2f4990bc230f9d5c8b9f0a066cc))
+- GROWTH-4317 fix slider section style ([#79](https://github.com/hk01-digital/hk01-web-cn/issues/79)) ([0f60b9b](https://github.com/hk01-digital/hk01-web-cn/commit/0f60b9bc9471f72342a6aaa2c948cd8e91c24428))
+- GROWTH-4317 track RELATED_ARTICLE_CLICK ([#81](https://github.com/hk01-digital/hk01-web-cn/issues/81)) ([dd63717](https://github.com/hk01-digital/hk01-web-cn/commit/dd63717c7b249282996414c1571ba22dabbd7da2))
+- only require webpack-bundle-analyze for analyze ([#99](https://github.com/hk01-digital/hk01-web-cn/issues/99)) ([cbcf377](https://github.com/hk01-digital/hk01-web-cn/commit/cbcf37723fa1a475cff84679c8dac2493d13f3dd))
+- **redirect:** amend redirect url logic & forward query string to redirect ([19d5631](https://github.com/hk01-digital/hk01-web-cn/commit/19d56315d20dc530ec3545ce69e036e0662c7b8f))
+- **section:** infinite scroll card style ([#105](https://github.com/hk01-digital/hk01-web-cn/issues/105)) ([aac1cc0](https://github.com/hk01-digital/hk01-web-cn/commit/aac1cc0388257feda00541e7686c340a338c4d37))
+- **seo:** lang should be simplified Chinese ([#100](https://github.com/hk01-digital/hk01-web-cn/issues/100)) ([d6ef694](https://github.com/hk01-digital/hk01-web-cn/commit/d6ef694ae095a4a4a969d0cf9ddd6000422a5cf0))
