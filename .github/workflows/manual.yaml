@@ -23,7 +23,7 @@ on:
           - cypress-github-production-desktop
 jobs:
   cypress: #Job names
-    runs-on: ["default-runner"]
+    runs-on: ['ubuntu-latest']
     steps:
       - name: Cypress Test
         env:
