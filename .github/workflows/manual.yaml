@@ -24,10 +24,15 @@ on:
 jobs:
   cypress: #Job names
     runs-on: ['ubuntu-latest']
+    environment: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release') && 'staging' || 'development' }}
     steps:
       - name: Cypress Test
         env:
           JOB: ${{ inputs.job }}
+          base_ref: ${{ github.base_ref }}
+          ref_name: ${{ github.ref_name }}
         run: |
           env | grep -e CYPRESS -e GITHUB >> .env.local
           echo $JOB
+          echo $base_ref
+          echo $ref_name
