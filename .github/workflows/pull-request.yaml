@@ -30,14 +30,16 @@ jobs:
 
       - name: Show Output Vars
         run: |
-          echo "LATEST_CHANGELOG: \${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
+          printf -v changelog "%s" "${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
+          echo "LATEST_CHANGELOG: $changelog"
 
       - name: Create release pull request
         run: |
+          printf -v changelog "%s" "${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b "\${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}" \
+            -b "$changelog" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps
