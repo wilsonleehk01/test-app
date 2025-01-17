@@ -36,7 +36,7 @@ jobs:
 
       - name: Create release pull request
         run: |
-          changelog=$(echo ${{ toJSON(steps.read_changelog.outputs.LATEST_CHANGELOG) }} | sed 's/"/\\"/g')
+          changelog=$(echo ${{ toJSON(steps.read_changelog.outputs.LATEST_CHANGELOG) }} | jq -r . | sed 's/"/\\"/g')
           gh pr create \
             -B master \
             -t 'Release testing' \
