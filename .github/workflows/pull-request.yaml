@@ -40,7 +40,7 @@ jobs:
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b "\$CHANGELOG" \
+            -b "$CHANGELOG" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps
