@@ -36,10 +36,11 @@ jobs:
 
       - name: Create release pull request
         run: |
+          CHANGELOG='- Revert "fix: wrong meta api path (#568)" (#598) ([33a3cf2](https://github.com/hk01-digital/hk01-site-gateway/commit/33a3cf2098c281f44e2d7c9f188396ec4b7b3d6f)), closes [#568](https://github.com/hk01-digital/hk01-site-gateway/issues/568) [#598](https://github.com/hk01-digital/hk01-site-gateway/issues/598)'
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b "<<EOF"$'\n'"${{ steps.get-changelog.outputs.changelog }}"$'\n'EOF \
+            -b "\$CHANGELOG" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps
