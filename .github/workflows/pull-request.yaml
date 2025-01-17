@@ -36,12 +36,11 @@ jobs:
 
       - name: Create release pull request
         run: |
-          npm install -g conventional-changelog-cli
-          CHANGELOG="$(conventional-changelog -p angular -u)"
+          LATEST_CHANGELOG=$(awk '/^## /{if (flag) exit; flag=1} flag' CHANGELOG.md)
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b "$CHANGELOG" \
+            -b "$LATEST_CHANGELOG" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps
