@@ -35,7 +35,7 @@ jobs:
       - name: Create release pull request
         run: |
           gh pr create \
-            -B master \
+            -B development \
             -t 'Release testing' \
             -b "\${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}" \
             -H 'release/testing'
