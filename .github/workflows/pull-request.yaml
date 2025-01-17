@@ -30,7 +30,7 @@ jobs:
 
       - name: Show Output Vars
         run: |
-          echo "LATEST_CHANGELOG: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
+          echo "LATEST_CHANGELOG: \${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
 
       - name: Create release pull request
         run: |
