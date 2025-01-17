@@ -39,7 +39,7 @@ jobs:
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b "\${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}" \
+            -b "<<EOF${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}EOF" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps
