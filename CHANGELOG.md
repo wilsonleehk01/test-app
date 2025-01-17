@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file. See [commit
 
 ### Features
 
+- Revert "fix: wrong meta api path (#568)" (#598) ([33a3cf2](https://github.com/hk01-digital/hk01-site-gateway/commit/33a3cf2098c281f44e2d7c9f188396ec4b7b3d6f)), closes [#568](https://github.com/hk01-digital/hk01-site-gateway/issues/568) [#598](https://github.com/hk01-digital/hk01-site-gateway/issues/598)
+
 - GROWTH-4296 nav bar - big menu ([#49](https://github.com/hk01-digital/hk01-web-cn/issues/49)) ([9b7fedd](https://github.com/hk01-digital/hk01-web-cn/commit/9b7fedd6c9105d4729863286b215d4a94b914a55))
 
 ### Bug Fixes
