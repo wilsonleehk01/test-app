@@ -12,4 +12,4 @@ runs:
       id: get-changelog
       run: |
         CHANGELOG='- Revert "fix: wrong meta api path (#568)" (#598) ([33a3cf2](https://github.com/hk01-digital/hk01-site-gateway/commit/33a3cf2098c281f44e2d7c9f188396ec4b7b3d6f)), closes [#568](https://github.com/hk01-digital/hk01-site-gateway/issues/568) [#598](https://github.com/hk01-digital/hk01-site-gateway/issues/598)'
-        echo "changelog<<EOF"$'\n'"$CHANGELOG"$'\n'EOF" | sed 's/"/\\"/g' >> "$GITHUB_OUTPUT"
+        echo "changelog<<EOF"$'\n'"$CHANGELOG"$'\n'"EOF" | sed 's/"/\\"/g' >> "$GITHUB_OUTPUT"
