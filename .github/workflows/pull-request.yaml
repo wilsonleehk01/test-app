@@ -36,7 +36,7 @@ jobs:
 
       - name: Create release pull request
         run: |
-          LATEST_CHANGELOG=$(cat <<EOF${{ steps.get-changelog.outputs.changelog }}EOF)
+          echo "LATEST_CHANGELOG<<EOF"$'\n'${{ steps.get-changelog.outputs.changelog }}$'\n'EOF
           gh pr create \
             -B master \
             -t 'Release testing' \
