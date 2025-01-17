@@ -12,7 +12,7 @@ runs:
       shell: bash
       run: |
         # Extract the latest changelog entry
-        LATEST_CHANGELOG=$(awk '/^## /{if (flag) exit; flag=1} flag' CHANGELOG.md)
+        LATEST_CHANGELOG=$(awk '/^## /{if (flag) exit; flag=1} flag' CHANGELOG.md | sed 's/"/\\"/g')
 
         # output the release notes
         echo "LATEST_CHANGELOG<<EOF" >> $GITHUB_OUTPUT

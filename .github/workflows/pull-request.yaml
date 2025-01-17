@@ -36,11 +36,10 @@ jobs:
 
       - name: Create release pull request
         run: |
-          changelog=$(echo ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }} | sed 's/"/\\"/g')
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b "$changelog" \
+            -b "\${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps
