@@ -28,11 +28,11 @@ jobs:
         id: read_changelog
         uses: ./.github/actions/read-changelog
 
-      - name: Show Output Vars
-        run: |
-          echo "LATEST_CHANGELOG: <<EOF
-          ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
-          EOF"
+      # - name: Show Output Vars
+      #   run: |
+      #     echo "LATEST_CHANGELOG: <<EOF
+      #     ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
+      #     EOF"
 
       - name: Create release pull request
         run: |
