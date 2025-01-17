@@ -24,9 +24,9 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
-      - name: Read Changelog
-        id: read_changelog
-        uses: ./.github/actions/read-changelog
+      - name: Get changelog
+        id: get-changelog
+        uses: ./.github/actions/get-changelog
 
       # - name: Show Output Vars
       #   run: |
@@ -39,7 +39,7 @@ jobs:
           gh pr create \
             -B master \
             -t 'Release testing' \
-            -b ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }} \
+            -b "\${{ steps.get-changelog.outputs.changelog }}" \
             -H 'ci/testing'
 
       # as testing the release-please, comment out the following steps

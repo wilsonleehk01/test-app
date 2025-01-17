@@ -1,0 +1,17 @@
+name: Get changelog
+description: Get changelog
+outputs:
+  changelog:
+    description: Changelog
+    value: ${{ steps.get-changelog.outputs.changelog }}
+runs:
+  using: 'composite'
+  steps:
+    - shell: bash
+      name: Get changelog
+      id: get-changelog
+      run: |
+        npm install -g conventional-changelog-cli
+        CHANGELOG="$(conventional-changelog -p angular -u)"
+
+        echo "changelog<<EOF"$'\n'"$CHANGELOG"$'\n'EOF >> "$GITHUB_OUTPUT"
