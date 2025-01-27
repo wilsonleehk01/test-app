@@ -2,7 +2,7 @@ name: Post Release
 on:
   workflow_dispatch:
 env:
-  GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+  GH_TOKEN: ${{ github.token }}
 jobs:
   main:
     runs-on: ['ubuntu-latest']
@@ -37,6 +37,8 @@ jobs:
       #     token: ${{ env.GH_TOKEN}}
 
       - name: Create merge back
+        env:
+          GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
         uses: ./.github/actions/create-merge-back
         with:
           environment: 'production'
