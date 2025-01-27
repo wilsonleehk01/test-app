@@ -5,7 +5,7 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
   main:
-    if: github.ref_name == 'master'
+    if: ${{ github.ref_name == 'master' }}
     runs-on: ['ubuntu-latest']
     steps:
       - uses: actions/checkout@v4
