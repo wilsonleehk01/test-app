@@ -12,6 +12,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Check github variables
+        run: |
+          echo "github.base_ref: ${{ github.base_ref }}"
+          echo "github.head_ref: ${{ github.ref_name }}"
+
       # - name: Read Changelog
       #   id: read_changelog
       #   uses: ./.github/actions/read-changelog
@@ -36,9 +41,9 @@ jobs:
       #     skipIfReleaseExists: true
       #     token: ${{ env.GH_TOKEN}}
 
-      - name: Create merge back
-        env:
-          GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
-        uses: ./.github/actions/create-merge-back
-        with:
-          environment: 'production'
+      # - name: Create merge back
+      #   env:
+      #     GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+      #   uses: ./.github/actions/create-merge-back
+      #   with:
+      #     environment: 'production'
