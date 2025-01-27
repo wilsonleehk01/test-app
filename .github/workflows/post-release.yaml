@@ -2,7 +2,7 @@ name: Post Release
 on:
   workflow_dispatch:
 env:
-  GH_TOKEN: ${{ github.token }}
+  GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 jobs:
   main:
     runs-on: ['ubuntu-latest']
@@ -12,29 +12,29 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Read Changelog
-        id: read_changelog
-        uses: ./.github/actions/read-changelog
+      # - name: Read Changelog
+      #   id: read_changelog
+      #   uses: ./.github/actions/read-changelog
 
-      - name: Tag version
-        id: tag_version
-        uses: ./.github/actions/tag-version
+      # - name: Tag version
+      #   id: tag_version
+      #   uses: ./.github/actions/tag-version
 
-      - name: Show Output Vars
-        run: |
-          echo "TAG: ${{ steps.tag_version.outputs.TAG }}"
-          echo "LATEST_CHANGELOG: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
+      # - name: Show Output Vars
+      #   run: |
+      #     echo "TAG: ${{ steps.tag_version.outputs.TAG }}"
+      #     echo "LATEST_CHANGELOG: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}"
 
-      - name: Create GitHub Release
-        uses: ncipollo/release-action@v1
-        with:
-          tag: ${{ steps.tag_version.outputs.TAG }}
-          name: ${{ steps.tag_version.outputs.TAG }}
-          body: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
-          draft: false
-          prerelease: false
-          skipIfReleaseExists: true
-          token: ${{ env.GH_TOKEN}}
+      # - name: Create GitHub Release
+      #   uses: ncipollo/release-action@v1
+      #   with:
+      #     tag: ${{ steps.tag_version.outputs.TAG }}
+      #     name: ${{ steps.tag_version.outputs.TAG }}
+      #     body: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
+      #     draft: false
+      #     prerelease: false
+      #     skipIfReleaseExists: true
+      #     token: ${{ env.GH_TOKEN}}
 
       - name: Create merge back
         uses: ./.github/actions/create-merge-back
