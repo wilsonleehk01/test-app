@@ -1,0 +1,20 @@
+name: Generate Status Report Push
+on:
+  push:
+    branches:
+      - "development"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  main:
+    runs-on: ['ubuntu-latest']
+    environment: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release') && 'staging' || 'development' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup folder for s3 upload
+        run: |
+          echo "ABC"
