@@ -34,6 +34,8 @@ jobs:
       #     token: ${{ env.GH_TOKEN}}
 
       - name: Create merge back
+        env:
+          GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
         uses: ./.github/actions/create-merge-back
         with:
           environment: 'production'
