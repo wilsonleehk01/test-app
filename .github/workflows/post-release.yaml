@@ -5,6 +5,7 @@ env:
   GH_TOKEN: ${{ github.token }}
 jobs:
   main:
+    if: github.ref_name == 'master'
     runs-on: ['ubuntu-latest']
     steps:
       - name: Checkout repository
