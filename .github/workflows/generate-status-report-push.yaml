@@ -6,8 +6,6 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-env:
-  GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 jobs:
   main:
     runs-on: ['ubuntu-latest']
