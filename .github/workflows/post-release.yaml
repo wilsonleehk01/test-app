@@ -2,7 +2,7 @@ name: Post Release
 on:
   workflow_dispatch:
 env:
-  GH_TOKEN: ${{ github.token }}
+  GH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
 jobs:
   main:
     runs-on: ['ubuntu-latest']
