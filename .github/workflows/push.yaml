@@ -6,6 +6,7 @@ on: #trigger
       - 'development'
       - 'release/**'
       - 'master'
+      - "deploy-*"
 
 permissions:
   contents: write
@@ -29,6 +30,31 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
+      - name: Check github variables
+        run: |
+          echo "github.base_ref: ${{ github.base_ref }}"
+          echo "github.head_ref: ${{ github.ref_name }}"
+
+      - name: deploy-qa1 handle
+        run: |
+          case "${{ github.ref_name }}" in
+            deploy-qa1) : "hk01-web-cn-qa1" ;;
+            deploy-qa2) : "hk01-web-cn-qa2" ;;
+            deploy-qa3) : "hk01-web-cn-qa3" ;;
+            deploy-qa4) : "hk01-web-cn-qa4" ;;
+            deploy-qa5) : "hk01-web-cn-qa5" ;;
+            deploy-adv) : "hk01-web-cn-adv" ;;
+            deploy-asj) : "hk01-web-cn-asj" ;;
+            deploy-prod-adv) : "hk01-web-cn-adv" ;; # deploy to production cloud
+            master-b)   : "hk01-web-cn-master-b" ;;
+            *)          : "test-app-development" ;;
+          esac
+          echo "AWS_ECR_NAME="$_"" >> $GITHUB_ENV
+
+      - name: Check github variables
+        run: |
+          echo "AWS_ECR_NAME: ${{ env.AWS_ECR_NAME }}"
+
       # as testing the release-please, comment out the following steps
 
       # - name: Build image
@@ -43,16 +69,16 @@ jobs:
       # - name: Run test
       #   uses: ./.github/actions/run-test
 
-      - name: Configure git user and email
-        run: |
-          git config user.email "builds@github.com"
-          git config user.name "Github Actions"
+      # - name: Configure git user and email
+      #   run: |
+      #     git config user.email "builds@github.com"
+      #     git config user.name "Github Actions"
 
-      - name: configure image tag
-        run: |
-          echo "tag=v$((${{ github.run_number }} + 100000))-build" >> $GITHUB_ENV
-          echo "TIMESTAMP=$(date)" >> $GITHUB_ENV
-          sleep 5;
+      # - name: configure image tag
+      #   run: |
+      #     echo "tag=v$((${{ github.run_number }} + 100000))-build" >> $GITHUB_ENV
+      #     echo "TIMESTAMP=$(date)" >> $GITHUB_ENV
+      #     sleep 5;
 
       # - name: Build and push
       #   uses: docker/build-push-action@v4
