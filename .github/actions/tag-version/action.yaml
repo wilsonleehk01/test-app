@@ -1,8 +1,8 @@
 name: Tag Version
-description: "Get version number from package.json"
+description: 'Get version number from package.json'
 outputs:
   TAG:
-    description: "Tag version"
+    description: 'Tag version'
     value: ${{ steps.tag_version.outputs.TAG }}
 runs:
   using: "composite"

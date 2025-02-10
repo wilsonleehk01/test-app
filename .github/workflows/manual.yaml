@@ -1,0 +1,38 @@
+name: Cypress-Manual #Workflow name
+run-name: Deploy by @${{ github.actor }}
+env:
+  CYPRESS_RECORD_KEY: '123'
+  CYPRESS_BASIC_AUTH_USERNAME: 'abc'
+  CYPRESS_BASIC_AUTH_PASSWORD: 'bbb'
+  CYPRESS_SELF_SIGNED_CERT_BASE64: 'ccc'
+  CYPRESS_SELF_SIGNED_KEY_BASE64: 'ddd'
+  GH_TOKEN: ${{ github.token }}
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Dockfile for cypress"
+        required: true
+        type: choice
+        options:
+          - cypress-github
+          - cypress-github-desktop
+          - cypress-github-staging
+          - cypress-github-staging-desktop
+          - cypress-github-production
+          - cypress-github-production-desktop
+jobs:
+  cypress: #Job names
+    runs-on: ['ubuntu-latest']
+    environment: ${{ github.base_ref == 'master' && 'production' || contains(github.base_ref,'release') && 'staging' || 'development' }}
+    steps:
+      - name: Cypress Test
+        env:
+          JOB: ${{ inputs.job }}
+          base_ref: ${{ github.base_ref }}
+          ref_name: ${{ github.ref_name }}
+        run: |
+          env | grep -e CYPRESS -e GITHUB >> .env.local
+          echo $JOB
+          echo $base_ref
+          echo $ref_name

@@ -1,8 +1,8 @@
 name: Read Changelog
-description: "Read changelog"
+description: 'Read changelog'
 outputs:
   LATEST_CHANGELOG:
-    description: "Changelog content"
+    description: 'Changelog content'
     value: ${{ steps.read_changelog.outputs.LATEST_CHANGELOG }}
 runs:
   using: "composite"
